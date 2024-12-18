@@ -1,0 +1,23 @@
+About Dataset
+Context
+EEG devices are becoming cheaper and more inconspicuous, but few applications leverage EEG data effectively, in part because there are few large repositories of EEG data. The MIDS class at the UC Berkeley School of Information is sharing a dataset collected using consumer-grade brainwave-sensing headsets, along with the software code and visual stimulus used to collect the data. The dataset includes all subjects' readings during the stimulus presentation, as well as readings from before the start and after the end of the stimulus.
+
+Content
+We presented two slightly different stimuli to two different groups. Stimuli 1 is available here, and stimuli 2 is available here.
+
+For both stimuli, a group of about 15 people saw the stimuli at the same time, while EEG data was being collected. The stimuli each person saw is available in the session field of subject-metadata.csv. (Subjects who saw stimulus 2 left the room during stimulus 1, and vice versa).
+
+Find the synchronized times for both stimuli in stimulus-timing.csv.
+
+For each participant, we also anonymously collected some other metadata: (1) whether or not they had previously seen the video displayed during the stimulus (a superbowl ad), (2) gender, (3) whether or not they saw hidden icons displayed during the color counting exercise, and (4) their chosen color during the color counting exercise. All of these can be found in subject-metadata.csv.
+
+We also collected the timing (in indra_time) of all stimulus events for both session 1 and session 2. These times are included in stimulus-times.csv.
+
+Note: A signal quality of 0 is optimal. Values over 128 indicate that the headset was placed incorrectly.
+
+The server receives one data packet every second from each Mindwave Mobile device, and stores the data in one row entry.
+
+Acknowledgements
+Please use the following citation if you publish your research results using this dataset or software code or stimulus file:
+
+John Chuang, Nick Merrill, Thomas Maillart, and Students of the UC Berkeley Spring 2015 MIDS Immersion Class. "Synchronized Brainwave Recordings from a Group Presented with a Common Audio-Visual Stimulus (May 9, 2015)." May 2015.
